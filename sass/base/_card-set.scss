@@ -1,0 +1,19 @@
+/**
+  |============================
+  | сітка flex-box
+  |============================
+*/
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.card-set-item {
+    flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+    
+
+}
+
+
+

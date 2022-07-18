@@ -1,0 +1,31 @@
+.form{
+    width: 100%;
+    max-width: 528px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.form__heading{
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;   
+}
+
+.form__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__icon{
+    position: absolute;
+    left: 15px;
+    top: 29px;
+    transition: background-color, var(--transition-time-cubic);
+}  
+

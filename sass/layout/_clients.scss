@@ -1,0 +1,43 @@
+/* ------------------------------------------------- */
+/* --------------------Clients-------------------- */
+/* ------------------------------------------------- */
+
+.clients{
+    @extend %section
+}
+
+.clients__list{
+    display: flex;
+    justify-content: center;
+}
+
+.clients__item{
+    display: flex;
+
+ &:not(:last-child){
+    margin-right: 30px;
+}
+}
+
+.clients__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--color-icon);
+    border-radius: 4px;
+    color:var(--color-icon);
+    transition: color, var(--transition-time-cubic);
+    transition: border-color, var(--transition-time-cubic);
+
+&:hover,
+&:focus{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+}
+
+.clients__icon{
+    fill: currentColor;
+}

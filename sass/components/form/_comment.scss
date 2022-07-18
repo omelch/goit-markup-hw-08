@@ -1,0 +1,29 @@
+.comment {
+    margin: 0;
+    margin-top: 4px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    cursor: pointer;
+    max-width: 448px;
+    height: 120px;
+    transition: border var(--transition-time-cubic);
+
+
+   &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        padding: 12px, 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+    }
+    
+    &:focus {
+        border: 1px solid #2196F3;
+      }
+     
+}
+      
