@@ -2,22 +2,32 @@
 /* --------------------Clients-------------------- */
 /* ------------------------------------------------- */
 
-.clients{
+.clients {
     @extend %section
 }
 
-.clients__list{
+.clients__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+   
+
+    @media screen  and (min-width: 768px) {
+        
+    }
+
+
+    @media screen  and (min-width: 1200px) {
+        
+    }
+    
 }
 
-.clients__item{
-    display: flex;
 
- &:not(:last-child){
-    margin-right: 30px;
-}
-}
+// .clients__item{
+    
+ 
+// }
 
 .clients__link{
     display: flex;
@@ -38,6 +48,6 @@
 }
 }
 
-.clients__icon{
+.clients__icon {
     fill: currentColor;
 }

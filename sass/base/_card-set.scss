@@ -9,10 +9,8 @@
     gap: var(--indent);
 }
 
-.card-set-item {
-    flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
-    
-
+.card-set__item {
+	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 
