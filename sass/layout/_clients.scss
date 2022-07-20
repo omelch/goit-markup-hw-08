@@ -3,43 +3,51 @@
 /* ------------------------------------------------- */
 
 .clients {
-    @extend %section
+    @extend %section;
 }
 
 .clients__list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-   
+    flex-wrap: wrap;
+    --items:2;
+    margin: -15px;
 
-    @media screen  and (min-width: 768px) {
-        
+    @media screen and(min-width: 768px) {
+        display: flex;
+        --items:3;
     }
 
-
-    @media screen  and (min-width: 1200px) {
-        
+    @media screen and(min-width: 1200) {
+        display: flex;
+        --items:6;
     }
-    
 }
 
-
-// .clients__item{
-    
- 
-// }
-
 .clients__link{
+    outline: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--color-icon);
     border-radius: 4px;
     color:var(--color-icon);
     transition: color, var(--transition-time-cubic);
     transition: border-color, var(--transition-time-cubic);
+    margin: 15px;
+
+    @media screen and(min-width: 768px) {
+        width: 226px;
+        height: 92px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+    }
+
 
 &:hover,
 &:focus{
@@ -48,6 +56,6 @@
 }
 }
 
-.clients__icon {
+.clients__icon{
     fill: currentColor;
 }
