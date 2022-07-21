@@ -71,12 +71,13 @@ border: 1px solid #ECECEC;
     display: flex ;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     
 }
 
 @media screen and(min-width: 1200px) {
     flex-direction: row;
+    align-items: center;
 }
 }
 
@@ -122,14 +123,11 @@ border: 1px solid #ECECEC;
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
+    visibility: hidden;
    
-    
-    @media screen and(min-width: 450) {
-        display: none ;
+    @media screen and(min-width: 768px) {
+    visibility: visible;
     }
-
-
-
 }
 
 .header__contacts-link{
