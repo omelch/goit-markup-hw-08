@@ -709,6 +709,12 @@ body.no-scroll {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header__contacts-item:last-child {
+    margin-left: 30px;
+  }
+}
+
 .header__nav-link.current {
   color: var(--accent-color);
   position: relative;
@@ -730,11 +736,10 @@ body.no-scroll {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 450) {
   .current::after {
-    display: contents;
+    display: none;
   }
 }
 
@@ -1475,6 +1480,16 @@ body.no-scroll {
 /* ------------------------------------------------- */
 /* ----------------Section-Work---------------- */
 /* ------------------------------------------------- */
+.work {
+  padding-top: 0px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: contents;
+  }
+}
+
 .work__list {
   display: -webkit-box;
   display: -ms-flexbox;
