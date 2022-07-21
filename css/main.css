@@ -524,8 +524,8 @@ body.no-scroll {
   top: 0;
   left: 0;
   z-index: 100;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
