@@ -5,25 +5,37 @@
 .hero{
     background-color: var(--dark-background-color);
     text-align: center;
-    padding-top: 200px;
+    padding-top: 118px;
     padding-bottom: 200px;
+
+    @media screen and(min-width: 1200px) {
+        padding-top: 200px;
+
+    }
     
 }
 
 .hero__title{
     color: var(--white-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
     margin-bottom: 30px;
+
+ 
+    @media screen and(min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.4;
+
+    }
 }
 
 .bg-hero {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    max-height: 400px;
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid black;
@@ -34,6 +46,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+
+    @media screen and(min-width: 768px) {
+        max-width: 768px;
+        max-height: 400px;
+    }
+ 
+    @media screen and(min-width: 1200px) {
+        max-width: 1600px;
+        max-height: 600px;
+    }
 }
 
    

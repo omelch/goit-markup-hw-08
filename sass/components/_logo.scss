@@ -11,6 +11,12 @@
 .logo__header{
     padding-top: 24px;
     padding-bottom: 25px;
+
+    @media screen and(min-width: 768px) {
+     
+        margin-right: 88px;
+    }
+    
 }
 
 .logo__footer{

@@ -9,6 +9,7 @@ border: 1px solid #ECECEC;
 
 .header__nav{
     display: flex;
+    margin-right: 50px;
 }
 
 .container.nav {
@@ -20,6 +21,13 @@ border: 1px solid #ECECEC;
     align-items: center;
     display: flex;
     margin-left: 93px;
+    display: none;
+
+    @media screen and(min-width: 768px) {
+   display: contents ;
+    }
+
+
 }
 
 .header__nav-list .item{
@@ -34,27 +42,52 @@ border: 1px solid #ECECEC;
     display: block;
     color: var(--title-color);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 40px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color, var(--transition-time-cubic);
+
+@media screen and(min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em; ;
     }
 
+    }
+
+
+
 .header__contacts{
-    display: flex;
+    display: none;
     margin-left: auto;
     align-items: center;
+    // outline: 1px solid blueviolet;
+    
+@media screen and(min-width: 768px) {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and(min-width: 1200px) {
+    flex-direction: row;
+}
 }
 
 .header__contacts-item{
+    // outline: 1px solid red;
     display: flex;
     align-items: center;
+    margin-top: 10px;
 
-&:not(:last-child){
-    margin-right: 50px;
+    @media screen and(min-width: 1200px) {
+        margin-top: 0px;
     }
 }
 
@@ -64,7 +97,7 @@ border: 1px solid #ECECEC;
     position: relative;
     display: flex;
     align-items: center;
-}
+    }
 
 .current::after{
     content:'';
@@ -76,6 +109,11 @@ border: 1px solid #ECECEC;
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
+    display: none;
+    
+    @media screen and(min-width: 768px) {
+        display: contents ;
+    }
 }
 
 .header__contacts-link{
@@ -85,11 +123,18 @@ border: 1px solid #ECECEC;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
     align-items: center;
     transition: color, var(--transition-time-cubic);
+
+    @media screen and(min-width: 1200px) {
+        padding-top: 32px;
+    padding-bottom: 32px;
+        
+
+    }
 
 }
 
