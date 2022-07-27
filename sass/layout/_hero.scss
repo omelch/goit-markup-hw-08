@@ -39,23 +39,66 @@
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4) ),
-     url('../images/hero/img-hero.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+     url('../images/hero/hero_mb.jpg');
+
+    //  для ретіна екранів мобільна версія
+     @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4) ),
+     url('../images/hero/hero_mb@2x.jpg');
+  }
 
 
     @media screen and(min-width: 768px) {
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4) ),
+        url('../images/hero/hero_tb.jpg');
         max-width: 768px;
         max-height: 400px;
+
+            //  для ретіна екранів планшетна версія
+     @media (min-device-pixel-ratio: 2),
+     (-webkit-min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+       background-image: linear-gradient(to right,
+       rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4) ),
+        url('../images/hero/hero_tb@2x.jpg');
+     }
+   
     }
  
     @media screen and(min-width: 1200px) {
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4) ),
+        url('../images/hero/hero_desktop.jpg');
         max-width: 1600px;
         max-height: 600px;
+
+            //  для ретіна екранів десктопна версія
+     @media (min-device-pixel-ratio: 2),
+     (-webkit-min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+       background-image: linear-gradient(to right,
+       rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4) ),
+        url('../images/hero/hero_desktop@2x.jpg');
+     }
+   
     }
 }
 
