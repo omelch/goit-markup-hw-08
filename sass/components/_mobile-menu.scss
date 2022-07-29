@@ -27,11 +27,24 @@
 .mobile-menu-close {
 	opacity: 0;
 	transition: 500ms;
+	
 
 	.mobile-menu-btn.is-open & {
 		opacity: 1;
 	}
+
+	
 }
+
+
+.mobile-menu-btn:hover .mobile-menu-icon, .mobile-menu-btn:focus .mobile-menu-icon {
+    fill: var(--accent-color);
+	}
+
+.mobile-menu-btn:hover .mobile-menu-close, .mobile-menu-btn:focus .mobile-menu-close {
+		fill: var(--accent-color);
+		}
+
 
 /**
   |============================
@@ -133,3 +146,8 @@
 	text-decoration: none;
 	color: var(--accent-color);
 }
+
+	
+
+
+
