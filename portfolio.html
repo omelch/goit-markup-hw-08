@@ -298,17 +298,24 @@
   </main>
 
 
-   <!-- Footer  -->
-<footer class="footer">
-  <div class="container footer__block">
-  
+
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="container footer__block">
         <div class="footer__address">
-          <a href="./index.html" class="logo logo__footer">Web<span class="logo--light">Studio</span></a>
+          <a href="./index.html" class="logo logo__footer"
+            >Web<span class="logo--light">Studio</span></a
+          >
           <address>
             <ul class="footer__address-list list-reset">
               <li class="footer__item">
-                <a class="footer__link-location" href="https://goo.gl/maps/vdUjSE2Tv6SdJSwDA" target="_blank"
-                  rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                <a
+                  class="footer__link-location"
+                  href="https://goo.gl/maps/vdUjSE2Tv6SdJSwDA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li class="footer__item">
                 <a class="footer__contacts-link" href="mailto:info@example.com">info@example.com</a>
@@ -319,9 +326,9 @@
             </ul>
           </address>
         </div>
-  
+
         <div class="footer__contacts">
-          <p class="footer__title"><strong>присоединяйтесь</strong></p>
+          <strong class="footer__title">присоединяйтесь</strong>
           <ul class="footer__contacts-list list-reset">
             <li class="footer__contacts-item">
               <a class="footer__join-link" href="" target="_blank" rel="noopener noreferrer">
@@ -353,22 +360,29 @@
             </li>
           </ul>
         </div>
-  
-        <div class="footer__subscribe">
-          <p class="footer__title"><strong>Подпишитесь на рассылку</strong></p>
-          <div class="footer__subscribe-form">
-            <label for="footer__mail"></label>
-            <input class="footer__mail-input" type="email" name="mail" id="footer__mail" placeholder="E-mail" />
-            <button class="btn btn__subscribe" type="submit">Подписаться
-              <svg class="footer__subscribe-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-subscribe"></use>
-              </svg></button>
-          </div>
-  
-  
-  
-        </div>
+
+        <div class="footer-email">
+          <form name="form-follow">
+              <div class="form-follow__field">
+                  <label class="form-follow__label">
+                      <strong class="footer__title">Подпишитесь на рассылку</strong>
+                      <input class="form-follow__input" type="email" name="user-email" placeholder="E-mail"
+                          aria-label="email-input-field" >
+                  </label>
+                  <button class=" btn__subscribe btn__subscribe--top-marg" type="submit" aria-label="subscribe-button">
+                      <span class="follow-btn__text">Подписаться</span>
+                      <svg class="footer__subscribe-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-subscribe"></use>
+                      </svg>
+                  </button>
+              </div>
+          </form>
       </div>
+
+
+          </div>
+
+
     </footer>
   
 
